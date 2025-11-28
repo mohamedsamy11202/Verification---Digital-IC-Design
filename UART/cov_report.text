@@ -1,0 +1,110 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /Uart_TB
+=== Design Unit: work.Uart_TB
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       1         1         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/Uart_TB/#ublk#193570002#59/immed__60
+                     Testbench.sv(60)                   0          1
+
+=================================================================================
+=== Instance: /Testbench_sv_unit
+=== Design Unit: work.Testbench_sv_unit
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      1        na        na   100.00%
+        Coverpoints/Crosses          2        na        na        na
+            Covergroup Bins          5         5         0   100.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /Testbench_sv_unit/cg                           100.00%        100          -    Covered              
+    covered/total bins:                                     5          5          -                      
+    missing/total bins:                                     0          5          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp1                                    100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint cp2                                    100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance \/Testbench_sv_unit::Uart_packet::cg_f  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                     5          5          -                      
+    missing/total bins:                                     0          5          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp1                                    100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[NO_PARITY]                                78          1          -    Covered              
+        bin auto[ODD_PARITY]                               93          1          -    Covered              
+        bin auto[EVEN_PARITY]                             102          1          -    Covered              
+    Coverpoint cp2                                    100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin all_zeros                                       4          1          -    Covered              
+        bin all_ones                                        4          1          -    Covered              
+        default bin others                                265                     -    Occurred             
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /Testbench_sv_unit/cg                           100.00%        100          -    Covered              
+    covered/total bins:                                     5          5          -                      
+    missing/total bins:                                     0          5          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp1                                    100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint cp2                                    100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance \/Testbench_sv_unit::Uart_packet::cg_f  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                     5          5          -                      
+    missing/total bins:                                     0          5          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp1                                    100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[NO_PARITY]                                78          1          -    Covered              
+        bin auto[ODD_PARITY]                               93          1          -    Covered              
+        bin auto[EVEN_PARITY]                             102          1          -    Covered              
+    Coverpoint cp2                                    100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin all_zeros                                       4          1          -    Covered              
+        bin all_ones                                        4          1          -    Covered              
+        default bin others                                265                     -    Occurred             
+
+TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 1
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/Uart_TB/#ublk#193570002#59/immed__60
+                     Testbench.sv(60)                   0          1
+
+Total Coverage By Instance (filtered view): 100.00%
+
