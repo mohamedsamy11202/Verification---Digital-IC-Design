@@ -1,0 +1,1004 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /TOP/axi4if
+=== Design Unit: work.axi4_if
+=================================================================================
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      10        10         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /TOP/axi4if --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File interface.sv
+    25              1                          1     
+    28              1                          1     
+    28              2                          1     
+    28              3                          1     
+    28              4                          1     
+    28              5                          1     
+    28              6                          1     
+    28              7                          1     
+    28              8                          1     
+    28              9                          1     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        272       234        38    86.02%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /TOP/axi4if --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                        ARADDR[14]           0           1       50.00 
+                                        ARADDR[12]           0           1       50.00 
+                                       ARADDR[1-0]           0           0        0.00 
+                                        ARLEN[7-5]           0           0        0.00 
+                                       ARSIZE[2-0]           0           0        0.00 
+                                       AWADDR[1-0]           0           0        0.00 
+                                        AWLEN[7-5]           0           0        0.00 
+                                       AWSIZE[2-0]           0           0        0.00 
+                                          BRESP[0]           0           0        0.00 
+                                          RRESP[0]           0           0        0.00 
+
+Total Node Count     =        136 
+Toggled Node Count   =        116 
+Untoggled Node Count =         20 
+
+Toggle Coverage      =      86.02% (234 of 272 bins)
+
+=================================================================================
+=== Instance: /TOP/D1/mem_inst
+=== Design Unit: work.axi4_memory
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         5         5         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /TOP/D1/mem_inst
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File axi_memory.v
+------------------------------------IF Branch------------------------------------
+    24                                     52453     Count coming in to IF
+    24              1                          2     
+    26              1                      26225     
+                                           26226     All False Count
+Branch totals: 3 hits of 3 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    27                                     26225     Count coming in to IF
+    27              1                       3201     
+    29              1                      23024     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       4         4         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /TOP/D1/mem_inst --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File axi_memory.v
+    23              1                      52453     
+    25              1                          2     
+    28              1                       3201     
+    30              1                      23024     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        156       156         0   100.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /TOP/D1/mem_inst --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+
+Total Node Count     =         78 
+Toggled Node Count   =         78 
+Untoggled Node Count =          0 
+
+Toggle Coverage      =     100.00% (156 of 156 bins)
+
+=================================================================================
+=== Instance: /TOP/D1
+=== Design Unit: work.axi4
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        16        16         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /TOP/D1
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File axi4.sv
+------------------------------------IF Branch------------------------------------
+    69                                    121058     Count coming in to IF
+    69              1                          5     
+    99              1                     121053     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    106                                   121053     Count coming in to CASE
+    107             1                      74154     
+    127             1                       3601     
+    146             1                      36584     
+    168             1                       6714     
+Branch totals: 4 hits of 4 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    131                                     3601     Count coming in to IF
+    139             1                        400     
+Branch totals: 1 hit of 1 branch = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    148                                    36584     Count coming in to IF
+    161             1                          1     
+Branch totals: 1 hit of 1 branch = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    151                                    36583     Count coming in to IF
+    151             1                       3200     
+    156             1                      33383     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    187                                   121053     Count coming in to CASE
+    188             1                      71605     
+    208             1                       3400     
+    225             1                      46048     
+Branch totals: 3 hits of 3 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    210                                     3400     Count coming in to IF
+    216             1                        400     
+Branch totals: 1 hit of 1 branch = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    235                                    23024     Count coming in to IF
+    235             1                      20024     
+    243             1                       3000     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       3         3         0   100.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /TOP/D1 --
+
+  File axi4.sv
+----------------Focused Condition View-------------------
+Line       151 Item    1  (axi4if.WLAST || ((write_burst_cnt - 1) == 0))
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       235 Item    1  (read_burst_cnt > 0)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+
+Expression Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                      1         1         0   100.00%
+
+================================Expression Details================================
+
+Expression Coverage for instance /TOP/D1 --
+
+  File axi4.sv
+----------------Focused Expression View-----------------
+Line       229 Item    1  (read_burst_cnt == 0)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+
+FSM Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    FSM States                       7         7         0   100.00%
+    FSM Transitions                 10        10         0   100.00%
+
+================================FSM Details================================
+
+FSM Coverage for instance /TOP/D1 --
+
+FSM_ID: write_state
+    Current State Object : write_state
+    ----------------------
+    State Value MapInfo :
+    ---------------------
+Line          State Name               Value
+----          ----------               -----
+ 107              W_IDLE                   0
+ 127              W_ADDR                   1
+ 146              W_DATA                   2
+ 168              W_RESP                   3
+    Covered States :
+    ----------------
+                   State           Hit_count
+                   -----           ---------
+                  W_IDLE                3606          
+                  W_ADDR                3601          
+                  W_DATA                3201          
+                  W_RESP                3200          
+    Covered Transitions :
+    ---------------------
+Line            Trans_ID           Hit_count          Transition          
+----            --------           ---------          ----------          
+ 123                   0                3601          W_IDLE -> W_ADDR              
+ 140                   1                 400          W_ADDR -> W_IDLE              
+ 133                   2                3201          W_ADDR -> W_DATA              
+ 162                   3                   1          W_DATA -> W_IDLE              
+ 153                   4                3200          W_DATA -> W_RESP              
+ 174                   5                3200          W_RESP -> W_IDLE              
+
+
+    Summary                       Bins      Hits    Misses  Coverage
+    -------                       ----      ----    ------  --------
+        FSM States                   4         4         0   100.00%
+        FSM Transitions              6         6         0   100.00%
+FSM_ID: read_state
+    Current State Object : read_state
+    ----------------------
+    State Value MapInfo :
+    ---------------------
+Line          State Name               Value
+----          ----------               -----
+ 188              R_IDLE                   0
+ 208              R_ADDR                   1
+ 225              R_DATA                   2
+    Covered States :
+    ----------------
+                   State           Hit_count
+                   -----           ---------
+                  R_IDLE                3405          
+                  R_ADDR                3400          
+                  R_DATA                3000          
+    Covered Transitions :
+    ---------------------
+Line            Trans_ID           Hit_count          Transition          
+----            --------           ---------          ----------          
+ 204                   0                3400          R_IDLE -> R_ADDR              
+ 217                   1                 400          R_ADDR -> R_IDLE              
+ 214                   2                3000          R_ADDR -> R_DATA              
+ 245                   3                3000          R_DATA -> R_IDLE              
+
+
+    Summary                       Bins      Hits    Misses  Coverage
+    -------                       ----      ----    ------  --------
+        FSM States                   3         3         0   100.00%
+        FSM Transitions              4         4         0   100.00%
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      77        77         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /TOP/D1 --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File axi4.sv
+    68              1                     121058     
+    71              1                          5     
+    72              1                          5     
+    73              1                          5     
+    74              1                          5     
+    76              1                          5     
+    77              1                          5     
+    78              1                          5     
+    79              1                          5     
+    80              1                          5     
+    82              1                          5     
+    83              1                          5     
+    84              1                          5     
+    85              1                          5     
+    86              1                          5     
+    87              1                          5     
+    89              1                          5     
+    90              1                          5     
+    91              1                          5     
+    92              1                          5     
+    93              1                          5     
+    94              1                          5     
+    95              1                          5     
+    96              1                          5     
+    100             1                     121053     
+    101             1                     121053     
+    108             1                      74154     
+    109             1                      74154     
+    110             1                      74154     
+    114             1                       3601     
+    115             1                       3601     
+    116             1                       3601     
+    122             1                       3601     
+    123             1                       3601     
+    128             1                       3601     
+    133             1                       3201     
+    134             1                       3201     
+    135             1                       3201     
+    136             1                       3201     
+    137             1                       3201     
+    140             1                        400     
+    141             1                        400     
+    152             1                       3200     
+    153             1                       3200     
+    154             1                       3200     
+    157             1                      33383     
+    158             1                      33383     
+    162             1                          1     
+    163             1                          1     
+    172             1                       3200     
+    173             1                       3200     
+    174             1                       3200     
+    189             1                      71605     
+    190             1                      71605     
+    191             1                      71605     
+    195             1                       3400     
+    196             1                       3400     
+    197             1                       3400     
+    203             1                       3400     
+    204             1                       3400     
+    212             1                       3000     
+    213             1                       3000     
+    214             1                       3000     
+    215             1                       3000     
+    217             1                        400     
+    218             1                        400     
+    219             1                        400     
+    227             1                      46048     
+    228             1                      46048     
+    229             1                      46048     
+    233             1                      23024     
+    236             1                      20024     
+    237             1                      20024     
+    240             1                      20024     
+    241             1                      20024     
+    244             1                       3000     
+    245             1                       3000     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                          8         8         0   100.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /TOP/D1 --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+
+Total Node Count     =          4 
+Toggled Node Count   =          4 
+Untoggled Node Count =          0 
+
+Toggle Coverage      =     100.00% (8 of 8 bins)
+
+=================================================================================
+=== Instance: /TOP/T1
+=== Design Unit: work.axi4_TB
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       2         2         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/TOP/T1/generate_stimulus_w/immed__93
+                     Testbench.sv(93)                   0          1
+/TOP/T1/generate_stimulus_r/immed__175
+                     Testbench.sv(175)                  0          1
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         8         4         4    50.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /TOP/T1
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File Testbench.sv
+------------------------------------IF Branch------------------------------------
+    111                                     3000     Count coming in to IF
+    111             1                       3000     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    159                                     3000     Count coming in to IF
+    159             1                       3000     
+    161             1                    ***0***     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    228                                     3000     Count coming in to IF
+    228             1                       3000     
+    230             1                    ***0***     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    595                                        1     Count coming in to IF
+    595             1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       2         0         2     0.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /TOP/T1 --
+
+  File Testbench.sv
+----------------Focused Condition View-------------------
+Line       159 Item    1  (Wactual_queue[i] == Wexpected_queue[i])
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                                Input Term   Covered  Reason for no coverage   Hint
+                               -----------  --------  -----------------------  --------------
+  (Wactual_queue[i] == Wexpected_queue[i])         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target                                  Non-masking condition(s)      
+ ---------  ---------  --------------------                        -------------------------     
+  Row   1:    ***0***  (Wactual_queue[i] == Wexpected_queue[i])_0  -                             
+  Row   2:          1  (Wactual_queue[i] == Wexpected_queue[i])_1  -                             
+
+----------------Focused Condition View-------------------
+Line       228 Item    1  (Ractual_queue[i] == Rexpected_queue[i])
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                                Input Term   Covered  Reason for no coverage   Hint
+                               -----------  --------  -----------------------  --------------
+  (Ractual_queue[i] == Rexpected_queue[i])         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target                                  Non-masking condition(s)      
+ ---------  ---------  --------------------                        -------------------------     
+  Row   1:    ***0***  (Ractual_queue[i] == Rexpected_queue[i])_0  -                             
+  Row   2:          1  (Ractual_queue[i] == Rexpected_queue[i])_1  -                             
+
+
+Expression Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                      6         4         2    66.66%
+
+================================Expression Details================================
+
+Expression Coverage for instance /TOP/T1 --
+
+  File Testbench.sv
+----------------Focused Expression View-----------------
+Line       122 Item    1  (beat == pkt.AWLEN_rand)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       263 Item    1  (beat == axi4if.cb.AWLEN)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       305 Item    1  (beat == axi4if.cb.AWLEN)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       392 Item    1  (beat == axi4if.cb.AWLEN)
+Expression totals: 0 of 1 input term covered = 0.00%
+
+                 Input Term   Covered  Reason for no coverage   Hint
+                -----------  --------  -----------------------  --------------
+  (beat == axi4if.cb.AWLEN)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                   Non-masking condition(s)      
+ ---------  ---------  --------------------         -------------------------     
+  Row   1:    ***0***  (beat == axi4if.cb.AWLEN)_0  -                             
+  Row   2:    ***0***  (beat == axi4if.cb.AWLEN)_1  -                             
+
+----------------Focused Expression View-----------------
+Line       440 Item    1  (beat == axi4if.cb.AWLEN)
+Expression totals: 0 of 1 input term covered = 0.00%
+
+                 Input Term   Covered  Reason for no coverage   Hint
+                -----------  --------  -----------------------  --------------
+  (beat == axi4if.cb.AWLEN)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target                   Non-masking condition(s)      
+ ---------  ---------  --------------------         -------------------------     
+  Row   1:    ***0***  (beat == axi4if.cb.AWLEN)_0  -                             
+  Row   2:    ***0***  (beat == axi4if.cb.AWLEN)_1  -                             
+
+----------------Focused Expression View-----------------
+Line       607 Item    1  (beat == pkt.AWLEN_rand)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                     245       187        58    76.32%
+
+================================Statement Details================================
+
+Statement Coverage for instance /TOP/T1 --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File Testbench.sv
+    23              1                          1     
+    24              1                          1     
+    27              1                          1     
+    30              1                          1     
+    31              1                          1     
+    32              1                          1     
+    33              1                          1     
+    35              1                          1     
+    36              1                          1     
+    37              1                          1     
+    39              1                          1     
+    41              1                          1     
+    42              1                          1     
+    43              1                          1     
+    44              1                          1     
+    46              1                          1     
+    48              1                          1     
+    49              1                          1     
+    56              1                       3000     
+    57              1                       3000     
+    58              1                       3000     
+    64              1                       3000     
+    65              1                       3000     
+    66              1                       3000     
+    69              1                          1     
+    71              1                          1     
+    73              1                        200     
+    74              1                        200     
+    76              1                          1     
+    78              1                          1     
+    80              1                          1     
+    81              1                          1     
+    82              1                          1     
+    83              1                          1     
+    84              1                          1     
+    99              1                       3000     
+    102             1                       3000     
+    103             1                       3000     
+    104             1                       3000     
+    107             1                       3000     
+    108             1                       3000     
+    112             1                       3000     
+    113             1                       3000     
+    119             1                       3000     
+    119             2                      39297     
+    120             1                      39297     
+    121             1                      39297     
+    122             1                      39297     
+    124             1                      39297     
+    128             1                      39297     
+    132             1                       3000     
+    133             1                       3086     
+    133             2                       3086     
+    136             1                       3000     
+    137             1                       3000     
+    138             1                       3000     
+    139             1                       3000     
+    141             1                       3000     
+    142             1                       3000     
+    150             1                       3000     
+    154             1                       3000     
+    158             1                       3000     
+    158             2                       3000     
+    160             1                       3000     
+    162             1                    ***0***     
+    165             1                       3000     
+    166             1                       3000     
+    176             1                       3000     
+    180             1                       3000     
+    182             1                       3000     
+    183             1                       3000     
+    184             1                       3000     
+    187             1                       3000     
+    187             2                       3000     
+    190             1                       3000     
+    194             1                       3000     
+    196             1                      43048     
+    200             1                      43048     
+    202             1                      43048     
+    204             1                      43048     
+    208             1                       3000     
+    209             1                       3000     
+    210             1                       3000     
+    213             1                       3000     
+    219             1                       3000     
+    223             1                       3000     
+    227             1                       3000     
+    227             2                       3000     
+    229             1                       3000     
+    231             1                    ***0***     
+    233             1                       3000     
+    234             1                       3000     
+    241             1                        200     
+    246             1                        200     
+    247             1                        200     
+    248             1                        200     
+    252             1                        200     
+    256             1                        200     
+    260             1                        200     
+    260             2                       4200     
+    261             1                       4200     
+    262             1                       4200     
+    263             1                       4200     
+    265             1                       4200     
+    269             1                        200     
+    270             1                        200     
+    273             1                        200     
+    275             1                        200     
+    276             1                        200     
+    278             1                        200     
+    283             1                        200     
+    285             1                        200     
+    288             1                        200     
+    289             1                        200     
+    290             1                        200     
+    294             1                        200     
+    298             1                        200     
+    302             1                        200     
+    302             2                       1000     
+    303             1                       1000     
+    304             1                       1000     
+    305             1                       1000     
+    307             1                       1000     
+    311             1                        200     
+    314             1                        200     
+    316             1                        200     
+    317             1                        200     
+    319             1                        200     
+    324             1                        200     
+    327             1                        200     
+    330             1                        200     
+    331             1                        200     
+    332             1                        200     
+    336             1                        200     
+    337             1                        200     
+    340             1                        200     
+    344             1                        200     
+    344             2                       1000     
+    345             1                       1000     
+    346             1                       1000     
+    349             1                       1000     
+    353             1                        200     
+    354             1                        200     
+    354             2                        200     
+    357             1                        200     
+    359             1                        200     
+    360             1                        200     
+    362             1                        200     
+    370             1                    ***0***     
+    372             1                    ***0***     
+    375             1                    ***0***     
+    376             1                    ***0***     
+    377             1                    ***0***     
+    381             1                    ***0***     
+    382             1                    ***0***     
+    385             1                    ***0***     
+    389             1                    ***0***     
+    389             2                    ***0***     
+    390             1                    ***0***     
+    391             1                    ***0***     
+    392             1                    ***0***     
+    394             1                    ***0***     
+    398             1                    ***0***     
+    399             1                    ***0***     
+    400             1                    ***0***     
+    401             1                    ***0***     
+    404             1                    ***0***     
+    406             1                    ***0***     
+    407             1                    ***0***     
+    409             1                    ***0***     
+    417             1                    ***0***     
+    420             1                    ***0***     
+    423             1                    ***0***     
+    424             1                    ***0***     
+    425             1                    ***0***     
+    429             1                    ***0***     
+    433             1                    ***0***     
+    437             1                    ***0***     
+    437             2                    ***0***     
+    438             1                    ***0***     
+    439             1                    ***0***     
+    440             1                    ***0***     
+    442             1                    ***0***     
+    446             1                    ***0***     
+    451             1                    ***0***     
+    453             1                    ***0***     
+    454             1                    ***0***     
+    456             1                    ***0***     
+    472             1                        200     
+    475             1                        200     
+    476             1                        200     
+    477             1                        200     
+    479             1                        200     
+    481             1                        200     
+    485             1                        200     
+    490             1                        200     
+    492             1                        200     
+    496             1                        200     
+    498             1                        200     
+    499             1                        200     
+    500             1                        200     
+    503             1                        200     
+    506             1                        200     
+    510             1                        200     
+    516             1                        200     
+    518             1                        200     
+    523             1                    ***0***     
+    526             1                    ***0***     
+    527             1                    ***0***     
+    528             1                    ***0***     
+    531             1                    ***0***     
+    531             2                    ***0***     
+    534             1                    ***0***     
+    538             1                    ***0***     
+    540             1                    ***0***     
+    541             1                    ***0***     
+    542             1                    ***0***     
+    543             1                    ***0***     
+    545             1                    ***0***     
+    547             1                    ***0***     
+    553             1                    ***0***     
+    555             1                    ***0***     
+    564             1                        200     
+    567             1                        200     
+    568             1                        200     
+    569             1                        200     
+    570             1                        200     
+    571             1                        200     
+    575             1                        200     
+    582             1                          1     
+    585             1                          1     
+    586             1                          1     
+    587             1                          1     
+    589             1                          1     
+    591             1                          1     
+    592             1                          1     
+    596             1                          1     
+    597             1                          1     
+    600             1                          1     
+    604             1                          1     
+    604             2                         16     
+    605             1                         16     
+    606             1                         16     
+    607             1                         16     
+    613             1                         16     
+
+=================================================================================
+=== Instance: /TOP/A1
+=== Design Unit: work.assertion
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       2         2         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/TOP/A1/A1           Assertion.sv(11)                   0          1
+/TOP/A1/A2           Assertion.sv(24)                   0          1
+
+Directive Coverage:
+    Directives                       2         2         0   100.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/TOP/A1/C1                               assertion Verilog  SVA  Assertion.sv(13)3000 Covered   
+/TOP/A1/C2                               assertion Verilog  SVA  Assertion.sv(26)3000 Covered   
+
+=================================================================================
+=== Instance: /TOP
+=== Design Unit: work.TOP
+=================================================================================
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       2         2         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /TOP --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File TOP.sv
+    11              1                     242113     
+    11              2                     242112     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                          2         2         0   100.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /TOP --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+
+Total Node Count     =          1 
+Toggled Node Count   =          1 
+Untoggled Node Count =          0 
+
+Toggle Coverage      =     100.00% (2 of 2 bins)
+
+=================================================================================
+=== Instance: /TOP_sv_unit
+=== Design Unit: work.TOP_sv_unit
+=================================================================================
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       1         0         1     0.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /TOP_sv_unit --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File axi4_packet.sv
+    74              1                    ***0***     
+
+=================================================================================
+=== Instance: /Testbench_sv_unit
+=== Design Unit: work.Testbench_sv_unit
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      1        na        na   100.00%
+        Coverpoints/Crosses          4        na        na        na
+            Covergroup Bins         12        12         0   100.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /Testbench_sv_unit/axi4_packet/cg               100.00%        100          -    Covered              
+    covered/total bins:                                    12         12          -                      
+    missing/total bins:                                     0         12          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_addr                                100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin low_addr                                     4682          1          -    Covered              
+        bin mid_addr                                    38163          1          -    Covered              
+        bin high_addr                                   42500          1          -    Covered              
+    Coverpoint cp_awlen                               100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin len_short                                    2388          1          -    Covered              
+        bin len_medium                                  13666          1          -    Covered              
+        bin len_long                                    69291          1          -    Covered              
+    Coverpoint cp_raddr                               100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin low_addr                                     4060          1          -    Covered              
+        bin mid_addr                                    37999          1          -    Covered              
+        bin high_addr                                   43286          1          -    Covered              
+    Coverpoint cp_arlen                               100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin len_short                                   15337          1          -    Covered              
+        bin len_medium                                  31119          1          -    Covered              
+        bin len_long                                    38889          1          -    Covered              
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       1         1         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /Testbench_sv_unit --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File axi4_packet.sv
+    74              1                          1     
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /Testbench_sv_unit/axi4_packet/cg               100.00%        100          -    Covered              
+    covered/total bins:                                    12         12          -                      
+    missing/total bins:                                     0         12          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_addr                                100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin low_addr                                     4682          1          -    Covered              
+        bin mid_addr                                    38163          1          -    Covered              
+        bin high_addr                                   42500          1          -    Covered              
+    Coverpoint cp_awlen                               100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin len_short                                    2388          1          -    Covered              
+        bin len_medium                                  13666          1          -    Covered              
+        bin len_long                                    69291          1          -    Covered              
+    Coverpoint cp_raddr                               100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin low_addr                                     4060          1          -    Covered              
+        bin mid_addr                                    37999          1          -    Covered              
+        bin high_addr                                   43286          1          -    Covered              
+    Coverpoint cp_arlen                               100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin len_short                                   15337          1          -    Covered              
+        bin len_medium                                  31119          1          -    Covered              
+        bin len_long                                    38889          1          -    Covered              
+
+TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 1
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/TOP/A1/C1                               assertion Verilog  SVA  Assertion.sv(13)3000 Covered   
+/TOP/A1/C2                               assertion Verilog  SVA  Assertion.sv(26)3000 Covered   
+
+TOTAL DIRECTIVE COVERAGE: 100.00%  COVERS: 2
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/TOP/T1/generate_stimulus_w/immed__93
+                     Testbench.sv(93)                   0          1
+/TOP/T1/generate_stimulus_r/immed__175
+                     Testbench.sv(175)                  0          1
+/TOP/A1/A1           Assertion.sv(11)                   0          1
+/TOP/A1/A2           Assertion.sv(24)                   0          1
+
+Total Coverage By Instance (filtered view): 89.16%
+
